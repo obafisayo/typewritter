@@ -16,6 +16,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 body {
     display: flex;
@@ -23,6 +24,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
   
 .big-cont {
@@ -41,4 +43,16 @@ body {
   
 .big-q {
     color: orange;
+}
+
+@media (max-width: 768px) {
+    .container {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        font-size: 35px;
+    }
 }
